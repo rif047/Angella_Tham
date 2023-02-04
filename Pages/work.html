@@ -12,7 +12,7 @@
 </head>
 
 
-<body>
+<body style="overflow-x: hidden;">
     <div class="loader_bg" style="background-color: #f1d5c1; height: 100vh; overflow: hidden;">
         <div id="loaderOwl"></div>
     </div>
@@ -35,7 +35,7 @@
 
 
             <div style="width: 1320px; margin-top: 70px;" class="d-flex mb-5">
-                <div style="width: 660px; margin-right: 30px;">
+                <div style="width: 660px; margin-right: 30px;" class="contIng">
                     <img src="../Assets/fullworkstation01.svg" alt="">
                 </div>
                 <div style="width: 660px; margin-left: 30px;">
@@ -121,90 +121,58 @@
 
     .wPhoto div {
         margin: 10px;
+        width: 420px;
+        height: 215px;
+        background-size: contain !important;
     }
 
     .p1 {
-        width: 420px;
-        height: 215px;
         background: url(../Assets/Work/bedford2030thumbnail-nothovered.png) no-repeat;
-        background-size: contain;
+
     }
 
     .p1:hover {
         background: url(../Assets/Work/bedford2030thumbnail-hovered.png) no-repeat;
-        width: 420px;
-        height: 215px;
-        background-size: contain;
     }
 
     .p2 {
-        width: 420px;
-        height: 215px;
         background: url(../Assets/Work/evertruethumbnail-nothovered.png) no-repeat;
-        background-size: contain;
     }
 
     .p2:hover {
         background: url(../Assets/Work/evertruethumbnail-hovered.png) no-repeat;
-        width: 420px;
-        height: 215px;
-        background-size: contain;
     }
 
     .p3 {
-        width: 420px;
-        height: 215px;
         background: url(../Assets/Work/insightsfrom100thumbnail-nothovered.png) no-repeat;
-        background-size: contain;
     }
 
     .p3:hover {
         background: url(../Assets/Work/insightsfrom100thumbnail-hovered.png) no-repeat;
-        width: 420px;
-        height: 215px;
-        background-size: contain;
     }
 
     .p4 {
-        width: 420px;
-        height: 215px;
         background: url(../Assets/Work/odderthumbnail-nothovered.png) no-repeat;
-        background-size: contain;
     }
 
     .p4:hover {
         background: url(../Assets/Work/odderthumbnail-hovered.png) no-repeat;
-        width: 420px;
-        height: 215px;
-        background-size: contain;
     }
 
     .p5 {
-        width: 420px;
-        height: 215px;
         background: url(../Assets/Work/raiseroadmapdaythumbnail-nothovered.png) no-repeat;
-        background-size: contain;
     }
 
     .p5:hover {
         background: url(../Assets/Work/raiseroadmapdaythumbnail-hovered.png) no-repeat;
-        width: 420px;
-        height: 215px;
-        background-size: contain;
     }
 
     .p6 {
-        width: 420px;
-        height: 215px;
         background: url(../Assets/Work/thankviewthumbnail-nothovered.png) no-repeat;
-        background-size: contain;
     }
 
     .p6:hover {
         background: url(../Assets/Work/thankviewthumbnail-hovered.png) no-repeat;
-        width: 420px;
-        height: 215px;
-        background-size: contain;
     }
 
     .hiContent {
@@ -241,7 +209,24 @@
 
     @media only screen and (max-device-width: 480px) {
         .body {
-            height: 1330px !important;
+            height: 1800px !important;
+        }
+
+        .btnDiv {
+            margin: 30px 10px 0px 10px !important;
+        }
+
+        p {
+            margin: 0;
+            width: 400px;
+        }
+
+        .wPhoto {
+            display: block;
+        }
+
+        .contIng {
+            display: none;
         }
 
         .hiContent {
