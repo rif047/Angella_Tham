@@ -66,6 +66,13 @@ body {
     color: white;
 }
 
+.menuDiv a {
+    margin: 0 30px 0 0;
+    color: #D76A6A;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 
 
 
@@ -75,6 +82,10 @@ body {
 @media only screen and (max-device-width: 480px) {
     .body {
         height: 800px !important;
+    }
+
+    .menuDiv a {
+        margin: 0 20px 0 0;
     }
 
     .homeContent {
