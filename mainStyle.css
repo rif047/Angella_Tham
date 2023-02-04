@@ -2,16 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: .1s;
+    -moz-transition: .1s;
+    -webkit-transition: .1s;
+    -o-transition: .1s;
+    -ms-transition: .1s;
 }
 
 @font-face {
     font-family: "Orkney_Bold";
-    src: url("/Assets/Orkney_Bold.otf");
+    src: url("./Assets/Orkney_Bold.otf");
 }
 
 @font-face {
     font-family: "Orkney_Medium";
-    src: url("/Assets/Orkney_Medium.otf");
+    src: url("./Assets/Orkney_Medium.otf");
 }
 
 body {
