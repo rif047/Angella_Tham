@@ -131,6 +131,7 @@ p {
 
     .mCloseBtn {
         display: block;
+        width: 30px;
     }
 
     .modalLeft {
