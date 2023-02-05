@@ -115,6 +115,9 @@ p {
     pointer-events: all;
 }
 
+.mCloseBtn {
+    display: none;
+}
 
 
 
@@ -124,6 +127,26 @@ p {
 @media only screen and (max-device-width: 480px) {
     .body {
         height: 800px !important;
+    }
+
+    .mCloseBtn {
+        display: block;
+    }
+
+    .modalLeft {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        padding: 10px 30px !important;
+    }
+
+
+    .modalLeftDiv {
+        width: 480px !important;
+        margin-top: 20px;
+    }
+
+    .modalLeftImg {
+        width: 300px !important;
     }
 
     .menuDiv a {
