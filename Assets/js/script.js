@@ -1,7 +1,8 @@
-$('.loader_bg').delay(01).fadeOut('slow');
+$('.loader_bg').delay(1000).fadeOut('slow');
+$('.loaderlogoDiv').delay(1000).fadeOut('slow');
 
 $(document).ready(function () {
-    $('.body').hide().delay(01).fadeIn('slow');
+    $('.body').hide().delay(1000).fadeIn('slow');
 });
 
 var animation = bodymovin.loadAnimation({
