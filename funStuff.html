@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angella Tham</title>
+    <title>Fun Stuff</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
-    <link href="../Assets/favicon.png" type="image/x-icon" rel="icon" />
+    <link href="./Assets/favicon.png" type="image/x-icon" rel="icon" />
+    <link rel="stylesheet" href="./Assets/style/style.css">
+
 </head>
 
 
@@ -36,11 +37,11 @@
 
             <div style="width: 1320px; margin-top: 70px;" class="d-flex mb-5">
                 <div style="width: 660px; margin-right: 30px;" class="contIng">
-                    <img src="../Assets/fullworkstation01.svg" alt="">
+                    <img src="./Assets/fullworkstation01.svg" alt="">
                 </div>
                 <div style="width: 660px; margin-left: 30px;">
                     <h1 style="font-weight: bold; font-family: Orkney_Bold; color: #4C3D36;">fun stuff.
-                        <img src="../Assets/smilingemoji.svg" style="width: 27px; margin-top: -4px; font-size: 14px;"
+                        <img src="./Assets/smilingemoji.svg" style="width: 27px; margin-top: -4px; font-size: 14px;"
                             alt="">
                     </h1>
                     <p style="color: #65564F; margin-right: 70px; font-size: 14px;">
@@ -64,7 +65,7 @@
             <footer>
                 <div class="d-flex justify-content-between btnDiv" style="margin: 30px 0 0 0">
                     <a href="/" class="backBTN text-decoration-none"> go back </a>
-                    <a href="../Pages/resume.html" class="frontBTN text-decoration-none">see my resume</a>
+                    <a href="./resume.html" class="frontBTN text-decoration-none">see my resume</a>
                 </div>
 
             </footer>
@@ -75,7 +76,7 @@
                     <div class="modalContent d-flex">
                         <div class="modalLeft d-flex" style="padding: 50px;">
                             <div style="width: 700px;">
-                                <img style="width: 600px;" src="./../Assets/Img/01_projectimage_bedford2030.png" alt="">
+                                <img style="width: 600px;" src="./Assets/Img/01_projectimage_bedford2030.png" alt="">
                             </div>
                             <div style="width: 300px;">
                                 <h2 style="font-family: Orkney_Bold; color: #4C3D36;">bedford 2030.</h2>
@@ -103,67 +104,31 @@
                             </div>
                         </div>
                         <div class="modalRight">
-                            <img src="./../Assets/closeicon-nothovered.svg" alt="" class="closeBtn"
-                                data-bs-dismiss="modal" aria-label="Close">
+                            <img src="./Assets/closeicon-nothovered.svg" alt="" class="closeBtn" data-bs-dismiss="modal"
+                                aria-label="Close">
                             <div>
-                                <img style="margin: 200px 45px 0px 0;" src="./../Assets/scrollicon-nothovered.svg"
-                                    alt="">
+                                <img style="margin: 200px 45px 0px 0;" src="./Assets/scrollicon-nothovered.svg" alt="">
                             </div>
 
                             <div style="margin: 250px 0 0 -25px; display: flex; justify-content: space-between;">
-                                <img style="width: 15px;" src="./../Assets/leftarrowicon-nothovered.svg" alt="">
-                                <img style="width: 15px;" src="./../Assets/rightarrowicon-nothovered.svg" alt="">
+                                <img style="width: 15px;" src="./Assets/leftarrowicon-nothovered.svg" alt="">
+                                <img style="width: 15px;" src="./Assets/rightarrowicon-nothovered.svg" alt="">
                             </div>
 
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
-
-
         </div>
-
-
     </div>
 
 
 
-
-
-
-    <script src="./Assets/js/lottie.min.js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-        setTimeout(function () {
-            $('.loader_bg').fadeToggle();
-        }, 18);
-
-        $(document).ready(function () {
-            $('.body').hide().delay(18).fadeIn('slow');
-        });
-
-        var animation = bodymovin.loadAnimation({
-            container: document.getElementById('loaderOwl'),
-            path: '../Assets/loader.json',
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-        });
-
-        var animation = bodymovin.loadAnimation({
-            container: document.getElementById('logo'),
-            path: '../Assets/logo.json',
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-        });
-    </script>
+    <script src="./Assets/js/script.js"></script>
 
 </body>
 
@@ -184,55 +149,6 @@
 
     .modalLeftImg {
         width: 300px;
-    }
-
-    .p1 {
-        background: url(../Assets/Fun/halloweenbundle2021thumbnail-nothovered.png) no-repeat;
-
-    }
-
-    .p1:hover {
-        background: url(../Assets/Fun/halloweenbundle2021thumbnail-hovered.png) no-repeat;
-    }
-
-    .p2 {
-        background: url(../Assets/Fun/liveandletjivethumbnail-nothovered.png) no-repeat;
-    }
-
-    .p2:hover {
-        background: url(../Assets/Fun/liveandletjivethumbnail-hovered.png) no-repeat;
-    }
-
-    .p3 {
-        background: url(../Assets/Fun/rabbittownthumbnail-nothovered.png) no-repeat;
-    }
-
-    .p3:hover {
-        background: url(../Assets/Fun/rabbittownthumbnail-hovered.png) no-repeat;
-    }
-
-    .p4 {
-        background: url(../Assets/Fun/thebedtimeboatthumbnail-nothovered.png) no-repeat;
-    }
-
-    .p4:hover {
-        background: url(../Assets/Fun/thebedtimeboatthumbnail-hovered.png) no-repeat;
-    }
-
-    .p5 {
-        background: url(../Assets/Fun/thebuskingraccoonthumbnail-nothovered.png) no-repeat;
-    }
-
-    .p5:hover {
-        background: url(../Assets/Fun/thebuskingraccoonthumbnail-hovered.png) no-repeat;
-    }
-
-    .p6 {
-        background: url(../Assets/Fun/thesailorthumbnail-nothovered.png) no-repeat;
-    }
-
-    .p6:hover {
-        background: url(../Assets/Fun/thesailorthumbnail-hovered.png) no-repeat;
     }
 
     .hiContent {
@@ -266,6 +182,7 @@
         margin: -75px -1px 0 -120px;
         z-index: -1
     }
+
 
     @media only screen and (max-device-width: 480px) {
         .body {
@@ -314,7 +231,56 @@
             width: 480px;
             padding: 10px 40px;
         }
+    }
 
+
+
+    .p1 {
+        background: url(./Assets/Fun/halloweenbundle2021thumbnail-nothovered.png) no-repeat;
+    }
+
+    .p1:hover {
+        background: url(./Assets/Fun/halloweenbundle2021thumbnail-hovered.png) no-repeat;
+    }
+
+    .p2 {
+        background: url(./Assets/Fun/liveandletjivethumbnail-nothovered.png) no-repeat;
+    }
+
+    .p2:hover {
+        background: url(./Assets/Fun/liveandletjivethumbnail-hovered.png) no-repeat;
+    }
+
+    .p3 {
+        background: url(./Assets/Fun/rabbittownthumbnail-nothovered.png) no-repeat;
+    }
+
+    .p3:hover {
+        background: url(./Assets/Fun/rabbittownthumbnail-hovered.png) no-repeat;
+    }
+
+    .p4 {
+        background: url(./Assets/Fun/thebedtimeboatthumbnail-nothovered.png) no-repeat;
+    }
+
+    .p4:hover {
+        background: url(./Assets/Fun/thebedtimeboatthumbnail-hovered.png) no-repeat;
+    }
+
+    .p5 {
+        background: url(./Assets/Fun/thebuskingraccoonthumbnail-nothovered.png) no-repeat;
+    }
+
+    .p5:hover {
+        background: url(./Assets/Fun/thebuskingraccoonthumbnail-hovered.png) no-repeat;
+    }
+
+    .p6 {
+        background: url(./Assets/Fun/thesailorthumbnail-nothovered.png) no-repeat;
+    }
+
+    .p6:hover {
+        background: url(./Assets/Fun/thesailorthumbnail-hovered.png) no-repeat;
     }
 </style>
 

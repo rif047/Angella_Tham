@@ -11,12 +11,12 @@
 
 @font-face {
     font-family: "Orkney_Bold";
-    src: url("./Assets/Orkney_Bold.otf");
+    src: url("./../Orkney_Bold.otf");
 }
 
 @font-face {
     font-family: "Orkney_Medium";
-    src: url("./Assets/Orkney_Medium.otf");
+    src: url("./../Orkney_Medium.otf");
 }
 
 body {
