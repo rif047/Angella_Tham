@@ -70,8 +70,10 @@
 
             <footer>
                 <div class="d-flex justify-content-between btnDiv" style="margin: 30px 0 0 0">
-                    <a href="/" class="backBTN text-decoration-none"> go back </a>
-                    <a href="./resume.html" class="frontBTN text-decoration-none">see my resume</a>
+                    <a href="/" class="backBTN text-decoration-none"><img style="width: 10px;"
+                            src="./Assets/goback.svg"> go back </a>
+                    <a href="./resume.html" class="frontBTN text-decoration-none">see my resume <img
+                            src="./Assets/gofront.svg" style="width: 10px;"></a>
                 </div>
 
             </footer>
@@ -87,7 +89,6 @@
                         aria-label="Close">
                     <div class="modalContent d-flex">
                         <div class="modalLeft d-flex" style="padding: 50px;">
-
                             <div class="mDes">
                                 <p style="font-family: Orkney_Bold; color: #D76A6A; margin-top: 50px;">deliverables
                                 </p>
@@ -232,19 +233,22 @@
     }
 
     @media only screen and (min-width: 360px) and (max-width: 600px) {
+        .sContent {
+            padding: 0 20px !important;
+        }
 
         .contentD {
             margin: 0 10px;
         }
 
         .wPhoto {
-            padding: 0 10px;
+            padding: 0 30px;
             margin: auto;
         }
 
         .wPhoto div {
             margin: 0px;
-            height: 190px;
+            height: 180px;
         }
 
 
@@ -295,6 +299,76 @@
             padding: 10px 40px;
         }
 
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 360px) {
+
+
+        .contentD {
+            margin: 0 10px;
+        }
+
+        .wPhoto {
+            padding: 0 10px;
+            margin: auto;
+        }
+
+        .wPhoto div {
+            margin: 0px;
+            height: 150px;
+        }
+
+
+
+        .mDes {
+            display: block;
+        }
+
+        .dDes {
+            display: none !important;
+        }
+
+        .modalRight {
+            display: none !important;
+        }
+
+        .btnDiv {
+            margin: 30px 10px 0px 10px !important;
+        }
+
+        .contIng {
+            display: none;
+        }
+
+        .hiContent {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hiLeft {
+            width: 480px;
+        }
+
+        .svg1 {
+            margin: -340px 0px 0px 80px;
+        }
+
+        .svg2 {
+            margin: -90px -1px 0 -120px;
+        }
+
+        .girlImg {
+            width: 200px;
+        }
+
+        .hiRight {
+            width: 480px;
+            padding: 10px 40px;
+        }
+
+        #logo {
+            width: 100px !important;
+        }
     }
 
 

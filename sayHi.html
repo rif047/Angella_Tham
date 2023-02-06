@@ -28,7 +28,7 @@
 
                 <div class="menuDiv">
                     <a href="./work.html">work</a>
-                    <a href="">fun stuff</a>
+                    <a href="./funStuff.html">fun stuff</a>
                     <a class="text-decoration-underline" href="#">say hi</a>
                 </div>
             </header>
@@ -94,8 +94,10 @@
                 <img class="img-fluid" style="width: 100%; margin-top: 85px;" src="./Assets/footer.png" alt="">
             </div>
             <div class="d-flex justify-content-between btnDiv" style="margin: -100px 40px 0px 40px;">
-                <a href="/" class="backBTN text-decoration-none"> go back </a>
-                <a href="./design.html" class="frontBTN text-decoration-none">see my design</a>
+                <a href="/" class="backBTN text-decoration-none"><img style="width: 10px;" src="./Assets/goback.svg"> go
+                    back </a>
+                <a href="./design.html" class="frontBTN text-decoration-none">see my design <img
+                        src="./Assets/gofront.svg" style="width: 10px;"></a>
             </div>
 
         </footer>
@@ -169,7 +171,7 @@
         }
 
         .svg1 {
-            margin: -188px 0px 0px 80px;
+            margin: -188px 0px 0px 27%;
             z-index: -1
         }
 
@@ -195,8 +197,77 @@
             margin: -40px 20px 0px 20px !important;
         }
 
+        .titleH1 {
+            font-size: 25px;
+        }
 
+        .titleH1 img {
+            width: 20px !important;
+        }
+    }
 
+    @media only screen and (min-width: 320px) and (max-width: 360px) {
+        .hiContent {
+            display: flex;
+            flex-direction: column;
+            width: 100% !important;
+        }
+
+        .hiLeft {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .girlImg {
+            width: 130px;
+        }
+
+        .gifAnim img {
+            width: 40px;
+        }
+
+        .svg1 {
+            margin: -188px 0px 0px 22%;
+            z-index: -1
+        }
+
+        .svg2 {
+            margin: -20px -1px 0 -40px;
+            z-index: -1
+        }
+
+        .hiRight {
+            width: 100%;
+            padding: 0px 22px;
+        }
+
+        .hiRight p {
+            font-size: 13px;
+        }
+
+        .hiRight h5 {
+            font-size: 16px;
+        }
+
+        .btnDiv {
+            margin: -40px 20px 0px 20px !important;
+        }
+
+        #logo {
+            width: 100px;
+        }
+
+        .svg1 {
+            margin: -188px 0px 0px 50px;
+        }
+
+        .titleH1 {
+            font-size: 20px;
+        }
+
+        .titleH1 img {
+            width: 17px !important;
+        }
     }
 </style>
 

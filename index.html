@@ -19,7 +19,7 @@
     </div>
 
 
-    <div class="body container-fluid" style="border: 20px solid #f3d7c3; height: 1000px; padding: 0;">
+    <div class="body container-fluid">
         <div class="container" style="padding: 0;">
             <header>
                 <a href="/">
@@ -29,35 +29,50 @@
 
             <div class="mHomeContent">
                 <img src="./Assets/mobileContent.png" alt="">
+                <div class="mHRightCon">
+                    <h1 class="titleH1" style="font-size: 20px;">I’m Angella Tham —</h1>
+                    <p style="font-family: Orkney_Medium; color: #4C3D36; font-size: 12px;">A creative designer,
+                        illustrator, and
+                        doodler
+                        with 5+ years of experience turning brands into
+                        ones that pop. I'm passionate and detail-oriented, always coming up with innovative
+                        solutions
+                        and one-of-a-kind designs.</p>
+                </div>
             </div>
 
-            <div class="row homeContent">
-                <div class="col-4 text-center hLeft">
+            <div class="homeContent d-flex text-center">
+                <div class="hLeft">
                     <div id="hello"></div>
                 </div>
 
-                <div class="col-8 text-center hRight">
-                    <img class="right img-fluid" src="./Assets/right.png" alt="">
+                <div class="hRight">
+                    <img class="rightImg" src="./Assets/right.png" alt="">
+                    <div class="hRightCon">
+                        <h1 class="titleH1">I’m Angella Tham —</h1>
+                        <p style="font-family: Orkney_Medium; color: #4C3D36;">A creative designer, illustrator, and
+                            doodler
+                            with 5+ years of experience turning brands into
+                            ones that pop. I'm passionate and detail-oriented, always coming up with innovative
+                            solutions
+                            and one-of-a-kind designs.</p>
+                    </div>
                 </div>
             </div>
+
+
             <div>
                 <div id="character"></div>
             </div>
         </div>
 
         <footer>
-            <img class="img-fluid" style="width: 100%; margin-top: 130px;" src="./Assets/footer.png" alt="">
-
-            <div class="d-flex justify-content-between homeBtn">
-                <a href="./sayHi.html">
-                    <img style="width: 100px; margin: -170px 0 0 35px; border-radius: 6px;" src="./Assets/hi.png"
-                        alt="">
-                </a>
-
-                <a href="./design.html">
-                    <img style="margin: -170px 35px 0px 0px; width: 160px; border-radius: 6px;"
-                        src="./Assets/design.png" alt="">
-                </a>
+            <img class="img-fluid" style="width: 100%; margin-top: 220px;" src="./Assets/footer.png" alt="">
+            <div class="d-flex justify-content-between btnDiv">
+                <a href="/sayHi.html" class="backBTN text-decoration-none backBTN"> <img style="width: 10px;"
+                        src="./Assets/goback.svg"> say hi </a>
+                <a href="./design.html" class="frontBTN text-decoration-none frontBTN">see my design <img
+                        src="./Assets/gofront.svg" style="width: 10px;"></a>
             </div>
         </footer>
     </div>
@@ -73,5 +88,105 @@
     <script src="./Assets/js/script.js"></script>
 
 </body>
+
+<style>
+    .btnDiv {
+        margin: -95px 105px;
+    }
+
+    .right {
+        width: 100%;
+        text-align: left;
+        margin: 100px 0 0 0;
+    }
+
+    .body {
+        border: 20px solid #f3d7c3;
+        height: 1000px;
+        padding: 0;
+    }
+
+    .rightImg {
+        width: 750px;
+    }
+
+    .hLeft {
+        margin: 170px 0 0 50px;
+    }
+
+    .hRight {
+        margin: 120px 0 0 50px;
+    }
+
+    #hello {
+        width: 300px;
+    }
+
+    #character {
+        position: absolute;
+        margin: -145px 0 0 280px;
+    }
+
+    .hRightCon {
+        margin: -270px 0px 0px 109px;
+        width: 550px;
+        text-align: left;
+    }
+
+
+
+
+    @media only screen and (min-width: 340px) and (max-width: 600px) {
+        .btnDiv {
+            margin: -290px 0 0 94px;
+            width: 600px;
+            padding: 15px;
+        }
+
+        .homeContent {
+            display: none !important;
+        }
+
+        .mHomeContent img {
+            width: 300px;
+        }
+
+        .mHRightCon {
+            text-align: left;
+            width: 240px;
+            margin: -266px 0px 0 18%;
+        }
+
+        .btnDiv {
+            margin: -50px 0 0 0;
+            width: 100%;
+        }
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 340px) {
+        .mHomeContent img {
+            width: 270px;
+        }
+
+        .mHRightCon {
+            text-align: left;
+            width: 210px;
+            margin: -266px 0px 0 12%;
+        }
+
+        .btnDiv {
+            margin: -50px 0 0 0;
+            width: 100%;
+        }
+
+        .homeContent {
+            display: none !important;
+        }
+
+        footer img {
+            margin-top: 345px !important;
+        }
+    }
+</style>
 
 </html>
