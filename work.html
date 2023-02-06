@@ -46,7 +46,7 @@
                 </div>
                 <div class="contentD col-xl-6 col-l-6 col-md-12 col-sm-12">
                     <h1 class="titleH1">works.
-                        <img src="./Assets/writingemoji.svg" style="width: 25px; margin-top: -4px; font-size: 13px;">
+                        <img src="./Assets/writingemoji.svg" style="width: 23px; margin-top: -4px; font-size: 13px;">
                     </h1>
                     <p style="color: #65564F; font-size: 14px;">Selected professional works that have been created in
                         the recent years, ranging from branding, art direction, illustration, and motion graphics,
@@ -86,8 +86,7 @@
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog">
-                    <img src="./Assets/closeicon-nothovered.svg" alt="" class="mCloseBtn" data-bs-dismiss="modal"
-                        aria-label="Close">
+
                     <div class="modalContent d-flex">
                         <div class="modalLeft d-flex" style="padding: 50px;">
 
@@ -104,6 +103,11 @@
                                     style="font-family: Orkney_Bold; color: #D76A6A; margin-top: 30px; text-align: right; font-size: 11px;">
                                     created in 2022
                                 </p>
+
+                                <div class="d-flex justify-content-between mt-5 mx-2">
+                                    <img style="width: 10px;" src="./Assets/goback.svg" alt="">
+                                    <img style="width: 10px;" src="./Assets/gofront.svg" alt="">
+                                </div>
                             </div>
 
 
@@ -111,16 +115,24 @@
                                 <img class="modalLeftImg" style="width: 600px;"
                                     src="./Assets/Img/01_projectimage_bedford2030.png" alt="">
                             </div>
-                            <div style="width: 300px;">
-                                <h2 style="font-family: Orkney_Bold; color: #4C3D36;">bedford 2030.</h2>
-                                <p style="font-size: 13px; font-weight: bold;">It is a long established fact that a
-                                    reader will be
-                                    distracted by the readable
-                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
-                                    it has a more-or-less normal distribution of letters, as opposed to using 'Content
-                                    here, content here', making it look like readable English. Many desktop publishing
-                                    packages and web page editors now use Lorem Ipsum as their default model text, and a
-                                    search for 'lorem ipsum' will.</p>
+                            <div class="cont">
+                                <img src="./Assets/closeicon-nothovered.svg" alt="" class="mCloseBtn"
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                <div>
+                                    <h2 style="font-family: Orkney_Bold; color: #4C3D36;">bedford 2030.</h2>
+                                    <p style="font-size: 13px; font-weight: bold;">It is a long established fact that a
+                                        reader will be
+                                        distracted by the readable
+                                        content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                        that
+                                        it has a more-or-less normal distribution of letters, as opposed to using
+                                        'Content
+                                        here, content here', making it look like readable English. Many desktop
+                                        publishing
+                                        packages and web page editors now use Lorem Ipsum as their default model text,
+                                        and a
+                                        search for 'lorem ipsum' will.</p>
+                                </div>
 
                                 <div class="dDes">
                                     <p style="font-family: Orkney_Bold; color: #D76A6A; margin-top: 50px;">deliverables
@@ -179,6 +191,10 @@
 
 
 <style>
+    .cont {
+        width: 300px;
+    }
+
     .wPhoto {
         width: 100%;
         display: flex;
@@ -232,6 +248,16 @@
     .svg2 {
         margin: -75px -1px 0 -120px;
         z-index: -1
+    }
+
+    .mCloseBtn {
+        display: none;
+    }
+
+    .modalLeft {
+        background-color: #ffffff;
+        width: 1000px;
+        opacity: 1;
     }
 
     @media only screen and (min-width: 360px) and (max-width: 600px) {
@@ -301,9 +327,112 @@
             padding: 10px 40px;
         }
 
+        .mCloseBtn {
+            display: block;
+            width: 20px;
+            float: right;
+            margin: 10px 10px;
+            cursor: pointer !important;
+        }
+
+        .cont>p:nth-child(3) {
+            font-size: 11px !important;
+        }
+
+
+        .cont h2 {
+            margin-top: 50px;
+        }
+
+        .cont {
+            width: 100%;
+        }
+
+        .modalLeft {
+            padding: 40px !important;
+            display: flex !important;
+            flex-direction: column-reverse !important;
+            width: 100%;
+
+        }
+
+        .modal-dialog {
+            width: 100%;
+            margin-top: 0 !important;
+        }
+
+        .modalContent {
+            padding: 40px 10px;
+        }
+
+        .modalLeftDiv {
+            width: 95% !important;
+        }
+
+        .modalLeftImg {
+            width: 100% !important;
+            text-align: center;
+        }
+
+
     }
 
     @media only screen and (min-width: 320px) and (max-width: 360px) {
+        .mCloseBtn {
+            display: block;
+            width: 20px;
+            float: right;
+            margin: 10px 10px;
+        }
+
+        .cont>p:nth-child(3) {
+            font-size: 11px !important;
+        }
+
+
+        .cont h2 {
+            margin-top: 50px;
+        }
+
+        .cont {
+            width: 100%;
+        }
+
+        .modalLeft {
+            padding: 10px !important;
+            display: flex !important;
+            flex-direction: column-reverse !important;
+            width: 100%;
+
+        }
+
+        .modal-dialog {
+            width: 100%;
+            margin-top: 0 !important;
+        }
+
+        .modalContent {
+            padding: 40px 10px;
+        }
+
+        .modalLeftDiv {
+            width: 95% !important;
+        }
+
+        .modalLeftImg {
+            width: 100% !important;
+            text-align: center;
+        }
+
+
+
+
+
+
+
+
+
+
 
 
         .contentD {

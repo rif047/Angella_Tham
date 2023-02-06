@@ -85,11 +85,7 @@ p {
     padding: 10px;
 }
 
-.modalLeft {
-    background-color: #ffffff;
-    width: 1000px;
-    opacity: 1;
-}
+
 
 .modalRight {
     background-color: #5a4c46;
@@ -105,10 +101,6 @@ p {
 
 .modal-dialog {
     pointer-events: all;
-}
-
-.mCloseBtn {
-    display: none;
 }
 
 .loader_bg {
@@ -139,19 +131,10 @@ p {
         overflow-x: hidden;
     }
 
-    .mCloseBtn {
-        display: block;
-        width: 30px;
-    }
+
 
     .loader_bg {
         transform: scale(3.5);
-    }
-
-    .modalLeft {
-        display: flex !important;
-        flex-direction: column-reverse !important;
-        padding: 10px 30px !important;
     }
 
 

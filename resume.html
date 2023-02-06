@@ -15,7 +15,6 @@
 <body>
     <div class="container-fluid">
         <div class="container" style="padding: 0;">
-
             <div class="cv">
                 <img src="./Assets/cv.jpg" alt="">
             </div>
@@ -52,7 +51,31 @@
 
     @media only screen and (min-width: 360px) and (max-width: 600px) {
         .cv img {
-            width: 450px;
+            width: 100%;
+        }
+
+        body {
+            background: black;
+            v: -webkit-fill-available;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 360px) {
+        .cv img {
+            width: 100%;
+        }
+
+        body {
+            background: black;
+            v: -webkit-fill-available;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 </style>
