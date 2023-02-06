@@ -29,6 +29,10 @@ body {
     margin-top: 30px;
 }
 
+footer {
+    margin-bottom: 40px;
+}
+
 .right {
     width: 800px;
     margin: 100px 0 0 0;
@@ -52,9 +56,7 @@ p {
     display: none;
 }
 
-#loaderOwl>svg:nth-child(1) {
-    margin-top: -200px;
-}
+
 
 .backBTN,
 .frontBTN {
@@ -119,14 +121,32 @@ p {
     display: none;
 }
 
+.loader_bg {
+    background-color: #f1d5c1;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.titleH1 {
+    font-weight: bold;
+    font-family: Orkney_Bold;
+    color: #4C3D36;
+}
 
 
 
 
 
-@media only screen and (max-device-width: 480px) {
+
+@media only screen and (min-width: 360px) and (max-width: 600px) {
     .body {
-        height: 800px !important;
+        height: 844px !important;
+        overflow: scroll;
+        overflow-x: hidden;
     }
 
     .mCloseBtn {
@@ -150,8 +170,18 @@ p {
         width: 300px !important;
     }
 
+    .menuDiv {
+        margin-top: 20px;
+    }
+
     .menuDiv a {
-        margin: 0 20px 0 0;
+        margin: 0 12px 0 0 !important;
+        font-size: 12px;
+    }
+
+    #logo {
+        width: 120px;
+        margin-left: 10px;
     }
 
     .homeContent {
@@ -169,7 +199,11 @@ p {
         display: none;
     }
 
-    #loaderOwl>svg:nth-child(1) {
-        margin-top: 0px;
+    .backBTN,
+    .frontBTN {
+        padding: 5px 12px;
+        border-radius: 3px;
     }
+
+
 }

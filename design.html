@@ -12,21 +12,38 @@
 </head>
 
 <body>
-    <div class="loader_bg" style=" background-color: #f1d5c1;">
+    <div class="loader_bg">
         <div id="loaderOwl"></div>
     </div>
 
 
-    <div class="body container-fluid"
-        style="border: 20px solid #f3d7c3; height: 1000px; padding: 0; background-color: #f3d7c3;">
+    <div class="body container-fluid">
         <div class="container" style="padding: 0;">
             <header>
                 <a href="/">
                     <div id="logo"></div>
                 </a>
             </header>
-            <div class="text-center imgDiv"">
-                <img src=" ./Assets/formImg.png" alt="">
+
+
+            <div class="text-center imgDiv">
+                <img class="imgBack" src=" ./Assets/formImg.png">
+                <form action="">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img class="lock" src="./Assets/lock.svg">
+                        <h1 class="titleH1">what's the password?</h1>
+                    </div>
+                    <input type="text" class="formInput" placeholder="say the magic word...">
+                    <a href="./work.html" class="formBtn text-decoration-none">unlock portfolio</a>
+                </form>
+            </div>
+
+            <div class="text-center mImgDiv">
+                <img src=" ./Assets/formImg1.png" alt="">
+                <div class="d-flex justify-content-center mb-3" style="margin: -190px 0px 15px 0;">
+                    <img class="lock" src="./Assets/lock.svg">
+                    <h1 class="titleH1">what's the password?</h1>
+                </div>
                 <form action="">
                     <input type="text" class="formInput" placeholder="say the magic word...">
                     <a href="./work.html" class="formBtn text-decoration-none">unlock portfolio</a>
@@ -41,8 +58,8 @@
             <div>
                 <img class="img-fluid ftImg" src="./Assets/footer1.png" alt="">
                 <div class="d-flex justify-content-between btnDiv" style="margin: -135px 105px;">
-                    <a href="/" class="backBTN text-decoration-none"> go back </a>
-                    <a href="./sayHi.html" class="frontBTN text-decoration-none">just wanna say hi</a>
+                    <a href="/" class="backBTN text-decoration-none backBTN"> go back </a>
+                    <a href="./sayHi.html" class="frontBTN text-decoration-none frontBTN">just wanna say hi</a>
                 </div>
             </div>
 
@@ -60,23 +77,38 @@
 </body>
 
 <style>
+    .body {
+        border: 20px solid #f3d7c3;
+        padding: 0;
+        background-color: #f3d7c3;
+    }
+
     form {
-        margin: -150px 90px 0px 0px;
+        margin: -200px 90px 0px 0px;
     }
 
     .imgDiv {
         margin: 100px 0 0 0
     }
 
+    .imgBack {
+        width: 682px;
+    }
+
+    .lock {
+        width: 23px;
+        margin: -13px 10px 0px 0px;
+    }
+
     .formInput {
-        padding: 17px 50px;
+        padding: 17px 30px;
         border: 1px solid white;
         border-radius: 8px 0px 0px 8px;
         color: #6B6462;
     }
 
     .formBtn {
-        padding: 17px 30px;
+        padding: 19px 20px;
         background-color: #d76a6a;
         border: 1px solid #d76a6a;
         margin: 0px 0px 0px -4px;
@@ -96,21 +128,31 @@
         margin-top: 340px;
     }
 
-    @media only screen and (max-device-width: 480px) {
+    .mImgDiv {
+        display: none;
+    }
+
+    @media only screen and (min-width: 360px) and (max-width: 600px) {
         .imgDiv {
-            margin: 120px 0 0 0;
+            display: none;
+        }
+
+        .mImgDiv {
+            display: block;
+            width: 100%;
+            margin: 100px 0 0 0;
+        }
+
+        .mImgDiv img {
+            width: 100%;
         }
 
         .ftImg {
-            margin-top: 350px;
+            margin-top: 440px;
         }
 
         .btnDiv {
-            margin: -105px 20px !important;
-        }
-
-        .text-center>img:nth-child(1) {
-            width: 430px;
+            margin: -45px 20px !important;
         }
 
         .formInput,
@@ -119,8 +161,12 @@
             font-size: 11px;
         }
 
+        .lock {
+            width: 20px !important;
+        }
+
         form {
-            margin: -80px 50px 0px 0px;
+            margin: 0;
         }
     }
 </style>

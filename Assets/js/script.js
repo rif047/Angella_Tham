@@ -1,9 +1,7 @@
-setTimeout(function () {
-    $('.loader_bg').fadeToggle();
-}, 1800);
+$('.loader_bg').delay(01).fadeOut('slow');
 
 $(document).ready(function () {
-    $('.body').hide().delay(1800).fadeIn('slow');
+    $('.body').hide().delay(01).fadeIn('slow');
 });
 
 var animation = bodymovin.loadAnimation({

@@ -14,7 +14,7 @@
 
 
 <body>
-    <div class="loader_bg" style="background-color: #f1d5c1; height: 100vh; overflow: hidden;">
+    <div class="loader_bg">
         <div id="loaderOwl"></div>
     </div>
 
@@ -38,7 +38,7 @@
             <div class="hiContent d-flex">
                 <div class="hiLeft">
                     <img class="girlImg" src="./Assets/girlImg.png" alt="">
-                    <div class="d-flex">
+                    <div class="d-flex gifAnim">
                         <div class="svg1"><img src="./Assets/winterberry.gif" alt=""></div>
                         <div class="svg2"><img src="./Assets/tealeaf.gif" alt="">
                         </div>
@@ -46,12 +46,12 @@
                 </div>
 
                 <div class="hiRight">
-                    <h1 style="font-family: Orkney_Bold; color: #4C3D36; font-weight: bold;">
+                    <h1 class="titleH1">
                         hi, nice to meet you.
                         <img style="width: 27px; margin-top: -4px;" src="./Assets/wave.svg" alt="">
                     </h1>
 
-                    <p style="color: #776861; margin-right: 70px;">
+                    <p style="color: #776861;">
                         My name is Angella-creative designer and illustrator living in the big apple. bring brands to
                         life and create designs in a wide range of disciplines including visual communication, branding,
                         marketing design, and illustration. My artworks are always completed with a detailed focus and
@@ -147,36 +147,55 @@
         z-index: -1
     }
 
-    @media only screen and (max-device-width: 480px) {
-        .body {
-            height: 1330px !important;
-        }
+    @media only screen and (min-width: 360px) and (max-width: 600px) {
 
         .hiContent {
             display: flex;
             flex-direction: column;
+            width: 100% !important;
         }
 
         .hiLeft {
-            width: 480px;
-        }
-
-        .svg1 {
-            margin: -340px 0px 0px 80px;
-        }
-
-        .svg2 {
-            margin: -90px -1px 0 -120px;
+            width: 100%;
+            margin-bottom: 20px;
         }
 
         .girlImg {
-            width: 200px;
+            width: 130px;
+        }
+
+        .gifAnim img {
+            width: 40px;
+        }
+
+        .svg1 {
+            margin: -188px 0px 0px 80px;
+            z-index: -1
+        }
+
+        .svg2 {
+            margin: -20px -1px 0 -40px;
+            z-index: -1
         }
 
         .hiRight {
-            width: 480px;
-            padding: 10px 40px;
+            width: 100%;
+            padding: 0px 22px;
         }
+
+        .hiRight p {
+            font-size: 13px;
+        }
+
+        .hiRight h5 {
+            font-size: 16px;
+        }
+
+        .btnDiv {
+            margin: -40px 20px 0px 20px !important;
+        }
+
+
 
     }
 </style>
