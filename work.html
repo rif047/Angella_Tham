@@ -14,9 +14,9 @@
 
 
 <body style="overflow-x: hidden;">
-    <div class="loaderlogoDiv" style="background-color: #f1d5c1;">
+    <div class="loaderlogoDiv">
         <a href="/">
-            <img style="width:170px; margin: 20px 0px 0px 20px;" src="./Assets/logoPng.png" alt="">
+            <img src="./Assets/logoPng.png" alt="">
         </a>
     </div>
     <div class="loader_bg">
@@ -24,8 +24,8 @@
     </div>
 
 
-    <div class="body container-fluid" style="border: 20px solid #f3d7c3; padding: 0;">
-        <div class="container" style="padding: 0;">
+    <div class="body container-fluid">
+        <div class="container">
             <header class="d-flex justify-content-between align-items-center">
                 <a href="/">
                     <div id="logo"></div>
@@ -40,7 +40,7 @@
 
 
 
-            <div style="margin-top: 70px;" class="mb-5 row sContent">
+            <div class="mb-5 row sContent">
                 <div class="contIng col-xl-6 col-l-6 col-md-12 col-sm-12">
                     <img class="img-fluid" src="./Assets/fullworkstation01.svg" alt="">
                 </div>
@@ -70,11 +70,10 @@
             </div>
 
             <footer>
-                <div class="d-flex justify-content-between btnDiv" style="margin: 30px 0 0 0">
-                    <a href="/" class="backBTN text-decoration-none"><img style="width: 10px;"
-                            src="./Assets/goback.svg"> go back </a>
+                <div class="d-flex justify-content-between btnDiv">
+                    <a href="/" class="backBTN text-decoration-none"><img src="./Assets/goback.svg"> go back </a>
                     <a href="./resume.html" class="frontBTN text-decoration-none">see my resume <img
-                            src="./Assets/gofront.svg" style="width: 10px;"></a>
+                            src="./Assets/gofront.svg"></a>
                 </div>
 
             </footer>
@@ -105,8 +104,8 @@
                                 </p>
 
                                 <div class="d-flex justify-content-between mt-5 mx-2">
-                                    <img style="width: 10px;" src="./Assets/goback.svg" alt="">
-                                    <img style="width: 10px;" src="./Assets/gofront.svg" alt="">
+                                    <img src="./Assets/goback.svg" alt="">
+                                    <img src="./Assets/gofront.svg" alt="">
                                 </div>
                             </div>
 
@@ -191,13 +190,26 @@
 
 
 <style>
+    .body {
+        border: 20px solid #f3d7c3;
+        padding: 0;
+    }
+
     .cont {
         width: 300px;
+    }
+
+    .btnDiv {
+        margin: 30px 0 0 0
     }
 
     .wPhoto {
         width: 100%;
         display: flex;
+    }
+
+    .sContent {
+        margin-top: 70px;
     }
 
     p {

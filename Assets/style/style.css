@@ -9,20 +9,6 @@
     -ms-transition: .1s;
 }
 
-/* hide scrollbar but allow scrolling */
-element {
-    -ms-overflow-style: none;
-    /* for Internet Explorer, Edge */
-    scrollbar-width: none;
-    /* for Firefox */
-    overflow-y: scroll;
-}
-
-element::-webkit-scrollbar {
-    display: none;
-    /* for Chrome, Safari, and Opera */
-}
-
 @font-face {
     font-family: "Orkney_Bold";
     src: url("./../Orkney_Bold.otf");
@@ -36,6 +22,19 @@ element::-webkit-scrollbar {
 body {
     font-family: Orkney_Medium;
     transition: 0.1s;
+}
+
+.loaderlogoDiv {
+    background-color: #f1d5c1;
+}
+
+.loaderlogoDiv img {
+    width: 170px;
+    margin: 20px 0px 0px 20px;
+}
+
+.container {
+    padding: 0;
 }
 
 #logo {
@@ -52,6 +51,9 @@ p {
     margin: 0;
 }
 
+.btnDiv img {
+    width: 10px;
+}
 
 
 
